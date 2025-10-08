@@ -1,0 +1,128 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Race Summary</title>
+        <style>
+            body { 
+                font-family: Arial, sans-serif; 
+                margin: 20px; 
+                background-color: #f4f4f9; 
+            }
+            .container { 
+                max-width: 600px; 
+                background: white; 
+                padding: 20px; 
+                border-radius: 8px; 
+                box-shadow: 0 0 10px #ccc; 
+                margin: 0 auto;
+            }
+            .back-button { 
+                position: absolute; 
+                top: 20px; 
+                left: 20px; 
+                padding: 10px 20px; 
+                background-color: #007bff; 
+                color: white; 
+                border: none; 
+                border-radius: 4px; 
+                cursor: pointer; 
+                text-decoration: none; 
+            }
+            .profile-image { 
+                width: 120px; 
+                height: 120px; 
+                border-radius: 60px; 
+                object-fit: cover; 
+                margin: 0 auto 20px auto; 
+                display: block; 
+            }
+            .athlete-name { 
+                font-size: 24px; 
+                font-weight: bold; 
+                text-align: center; 
+                margin-bottom: 20px; 
+            }
+            .info-table { 
+                width: 100%; 
+                border-collapse: collapse; 
+                margin-bottom: 30px;
+            }
+            .info-table th, .info-table td { 
+                padding: 12px; 
+                text-align: left; 
+                border-bottom: 1px solid #ddd; 
+            }
+            .info-table th { 
+                background-color: #f8f9fa; 
+                font-weight: bold; 
+                color: #495057;
+            }
+            .info-table tr:hover { 
+                background-color: #f5f5f5; 
+            }
+            .social-links { 
+                text-align: center; 
+                margin-top: 20px;
+            }
+            .social-links a { 
+                display: inline-block; 
+                margin: 0 10px; 
+                padding: 10px 20px; 
+                text-decoration: none; 
+                color: white; 
+                border-radius: 5px; 
+                font-weight: bold;
+                transition: opacity 0.3s;
+            }
+            .social-links a:hover { 
+                opacity: 0.8; 
+            }
+            .strava-link { 
+                background-color: #FC4C02; 
+            }
+            .instagram-link { 
+                background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); 
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#" class="back-button">Back</a>
+        <div class="container">
+            <img src="https://dgalywyr863hv.cloudfront.net/pictures/athletes/27764970/15587529/7/full.jpg" alt="Profile Image" class="profile-image" />
+            <div class="athlete-name">Linus Nibbenhagen <img src="https://flagcdn.com/24x18/de.png" alt="DE" width="24" height="18"></div>
+
+            <table class="info-table">
+                <tr>
+                    <th>Position</th>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th>Bib Number</th>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <th>Total Time</th>
+                    <td>16:39:32</td>
+                </tr>
+                <tr>
+                    <th>Distance</th>
+                    <td>114.0 km</td>
+                </tr>
+                <tr>
+                    <th>Laps Completed</th>
+                    <td>17</td>
+                </tr>
+            </table>
+
+            <div class="social-links">
+                
+                <a href="https://www.strava.com/athletes/27764970" target="_blank"><img src="https://images.icon-icons.com/2429/PNG/512/strava_logo_icon_147232.png" alt="Strava" height="18" style="vertical-align:middle;margin-right:4px;"></a>
+                <a href="nan" class="strava-link" target="_blank">View Activity on Strava</a>
+            </div>
+        </div>
+    </body>
+    </html>
+    
