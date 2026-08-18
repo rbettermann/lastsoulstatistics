@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merle Weiler · Last Soul Ultra 2026</title>
+<meta name="description" content="Community-run statistics for the Last Soul Ultra backyard ultra.">
+<link rel="stylesheet" href="../../static/css/site.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Last Soul Ultra Statistics</a>
+  <nav class="site-nav">
+    <a href="../../2026-last-soul/index.html" class="active">2026</a>
+    <a href="../../2025-last-soul/index.html">2025</a>
+    <a href="../../compare/index.html">Compare</a>
+  </nav>
+</header>
+<main>
+<a class="back-link" href="../index.html">&larr; Back to 2026 results</a>
+
+<div class="profile-card">
+  <div>
+    <h1>Merle Weiler <span class="subtitle">🇩🇪 DE</span></h1>
+    <dl class="info-table">
+      <dt>Status</dt><dd>DNF</dd>
+      <dt>Bib</dt><dd>170</dd>
+      <dt>Loops completed</dt><dd>6</dd>
+      <dt>Distance</dt><dd>40.2 km</dd>
+      <dt>Elapsed time</dt><dd>05:14:26</dd>
+      <dt>Time on course</dt><dd>05:14:25</dd>
+<dt>Rest banked</dt><dd>00:45:34</dd>      <dt>Fastest loop</dt><dd>51:00</dd>
+      <dt>Slowest loop</dt><dd>54:38</dd>
+    </dl>
+  </div>
+</div>
+
+
+<h2>Performance</h2>
+<div class="charts-grid athlete-charts-grid">
+  <div class="chart-card wide">
+  <h3>Loop time</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-loop-time"></canvas></div>
+</div>
+
+  
+  
+  
+  <div class="chart-card">
+  <h3>Rest per loop</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-rest"></canvas></div>
+</div>
+
+  
+</div>
+
+<h2>Loop-by-loop splits</h2>
+<table class="display data-table" data-dt-options='{"searching": false, "paging": false}'>
+  <thead>
+    <tr>
+      <th>Loop</th>
+      <th>Loop time</th>
+<th>Rest</th>      <th>Cumulative distance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>51:40</td>
+<td>8:19</td>      <td>6.7 km</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>51:06</td>
+<td>8:53</td>      <td>13.4 km</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>51:00</td>
+<td>8:59</td>      <td>20.1 km</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>52:43</td>
+<td>7:16</td>      <td>26.8 km</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>53:16</td>
+<td>6:43</td>      <td>33.5 km</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>54:38</td>
+<td>5:21</td>      <td>40.2 km</td>
+    </tr>
+  </tbody>
+</table></main>
+<footer>Community-run statistics, not an official race result. Data scraped from public sources. Report errors to <a href="mailto:seelenstatistics@gmail.com">seelenstatistics@gmail.com</a>.</footer>
+<script>window.SITE_CHARTS = {"chart-loop-time": {"data": {"datasets": [{"data": [51.67, 51.1, 51.0, 52.72, 53.27, 54.63], "pointRadius": 2, "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Loop time (min)"}}}}, "type": "line"}, "chart-rest": {"data": {"datasets": [{"data": [8.32, 8.88, 8.98, 7.27, 6.72, 5.35], "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Rest banked (min)"}}}}, "type": "bar"}};</script>
+<script src="../../static/js/site.js"></script>
+</body>
+</html>

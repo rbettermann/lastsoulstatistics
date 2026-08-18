@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jonas Stüwe · Last Soul Ultra 2026</title>
+<meta name="description" content="Community-run statistics for the Last Soul Ultra backyard ultra.">
+<link rel="stylesheet" href="../../static/css/site.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Last Soul Ultra Statistics</a>
+  <nav class="site-nav">
+    <a href="../../2026-last-soul/index.html" class="active">2026</a>
+    <a href="../../2025-last-soul/index.html">2025</a>
+    <a href="../../compare/index.html">Compare</a>
+  </nav>
+</header>
+<main>
+<a class="back-link" href="../index.html">&larr; Back to 2026 results</a>
+
+<div class="profile-card">
+  <div>
+    <h1>Jonas Stüwe <span class="subtitle">🇩🇪 DE</span></h1>
+    <dl class="info-table">
+      <dt>Status</dt><dd>DNF</dd>
+      <dt>Bib</dt><dd>34</dd>
+      <dt>Loops completed</dt><dd>15</dd>
+      <dt>Distance</dt><dd>100.6 km</dd>
+      <dt>Elapsed time</dt><dd>12:25:14</dd>
+      <dt>Time on course</dt><dd>12:25:13</dd>
+<dt>Rest banked</dt><dd>02:34:46</dd>      <dt>Fastest loop</dt><dd>44:07</dd>
+      <dt>Slowest loop</dt><dd>55:01</dd>
+    </dl>
+  </div>
+</div>
+
+
+<h2>Performance</h2>
+<div class="charts-grid athlete-charts-grid">
+  <div class="chart-card wide">
+  <h3>Loop time</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-loop-time"></canvas></div>
+</div>
+
+  
+  
+  
+  <div class="chart-card">
+  <h3>Rest per loop</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-rest"></canvas></div>
+</div>
+
+  
+</div>
+
+<h2>Loop-by-loop splits</h2>
+<table class="display data-table" data-dt-options='{"searching": false, "paging": false}'>
+  <thead>
+    <tr>
+      <th>Loop</th>
+      <th>Loop time</th>
+<th>Rest</th>      <th>Cumulative distance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>48:21</td>
+<td>11:38</td>      <td>6.7 km</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>49:09</td>
+<td>10:50</td>      <td>13.4 km</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>49:17</td>
+<td>10:42</td>      <td>20.1 km</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>49:11</td>
+<td>10:48</td>      <td>26.8 km</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>48:26</td>
+<td>11:33</td>      <td>33.5 km</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>49:21</td>
+<td>10:38</td>      <td>40.2 km</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>49:31</td>
+<td>10:28</td>      <td>46.9 km</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>49:21</td>
+<td>10:38</td>      <td>53.6 km</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>50:17</td>
+<td>9:42</td>      <td>60.4 km</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>48:02</td>
+<td>11:57</td>      <td>67.1 km</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>52:21</td>
+<td>7:38</td>      <td>73.8 km</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>44:07</td>
+<td>15:52</td>      <td>80.5 km</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>50:33</td>
+<td>9:26</td>      <td>87.2 km</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>52:07</td>
+<td>7:52</td>      <td>93.9 km</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>55:01</td>
+<td>4:58</td>      <td>100.6 km</td>
+    </tr>
+  </tbody>
+</table></main>
+<footer>Community-run statistics, not an official race result. Data scraped from public sources. Report errors to <a href="mailto:seelenstatistics@gmail.com">seelenstatistics@gmail.com</a>.</footer>
+<script>window.SITE_CHARTS = {"chart-loop-time": {"data": {"datasets": [{"data": [48.35, 49.15, 49.28, 49.18, 48.43, 49.35, 49.52, 49.35, 50.28, 48.03, 52.35, 44.12, 50.55, 52.12, 55.02], "pointRadius": 2, "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Loop time (min)"}}}}, "type": "line"}, "chart-rest": {"data": {"datasets": [{"data": [11.63, 10.83, 10.7, 10.8, 11.55, 10.63, 10.47, 10.63, 9.7, 11.95, 7.63, 15.87, 9.43, 7.87, 4.97], "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Rest banked (min)"}}}}, "type": "bar"}};</script>
+<script src="../../static/js/site.js"></script>
+</body>
+</html>

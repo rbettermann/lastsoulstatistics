@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compare events · Last Soul Ultra Statistics</title>
+<meta name="description" content="Community-run statistics for the Last Soul Ultra backyard ultra.">
+<link rel="stylesheet" href="../static/css/site.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html">Last Soul Ultra Statistics</a>
+  <nav class="site-nav">
+    <a href="../2026-last-soul/index.html">2026</a>
+    <a href="../2025-last-soul/index.html">2025</a>
+    <a href="../compare/index.html" class="active">Compare</a>
+  </nav>
+</header>
+<main>
+<h1>Compare events</h1>
+<p class="subtitle">Every loaded year, side by side.</p>
+
+<div class="charts-grid">
+  <div class="chart-card">
+  <h3>Field size by year</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-field-size-by-year"></canvas></div>
+</div>
+
+  <div class="chart-card">
+  <h3>Winning distance by year</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-winning-distance-by-year"></canvas></div>
+</div>
+
+  <div class="chart-card">
+  <h3>Gender split by year</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-gender-split-by-year"></canvas></div>
+</div>
+
+  <div class="chart-card wide">
+  <h3>Outcome rate by year</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-status-rate-by-year"></canvas></div>
+</div>
+
+</div>
+
+<h2>Summary</h2>
+<table class="display data-table" data-dt-options='{"searching": false, "paging": false}'>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Participants</th>
+      <th>Total distance</th>
+      <th>DNF</th>
+      <th>DNS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025</td>
+      <td>93</td>
+      <td>10954.5 km</td>
+      <td>92</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2026</td>
+      <td>169</td>
+      <td>23544.8 km</td>
+      <td>159</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+</main>
+<footer>Community-run statistics, not an official race result. Data scraped from public sources. Report errors to <a href="mailto:seelenstatistics@gmail.com">seelenstatistics@gmail.com</a>.</footer>
+<script>window.SITE_CHARTS = {"chart-field-size-by-year": {"data": {"datasets": [{"data": [93, 169], "seriesRoles": ["series-1", "series-2"]}], "labels": ["2025", "2026"]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"y": {"beginAtZero": true, "title": {"display": true, "text": "Participants"}}}}, "type": "bar"}, "chart-gender-split-by-year": {"data": {"datasets": [{"data": [73, 124], "label": "Male", "seriesRoles": "series-1"}, {"data": [20, 45], "label": "Female", "seriesRoles": "series-5"}], "labels": ["2025", "2026"]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": true, "position": "bottom"}}, "responsive": true, "scales": {"y": {"beginAtZero": true, "title": {"display": true, "text": "Participants"}}}}, "type": "bar"}, "chart-status-rate-by-year": {"data": {"datasets": [{"data": [1.1, 0.6], "label": "Winner", "seriesRoles": "status-good"}, {"data": [98.9, 94.1], "label": "DNF", "seriesRoles": "series-1"}, {"data": [0.0, 5.3], "label": "DNS", "seriesRoles": "muted"}], "labels": ["2025", "2026"]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": true, "position": "bottom"}}, "responsive": true, "scales": {"x": {"stacked": true}, "y": {"beginAtZero": true, "max": 100, "stacked": true, "title": {"display": true, "text": "% of participants"}}}}, "type": "bar"}, "chart-winning-distance-by-year": {"data": {"datasets": [{"data": [448.9, 630.364], "seriesRoles": ["series-1", "series-2"]}], "labels": ["2025", "2026"]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"y": {"beginAtZero": true, "title": {"display": true, "text": "Distance (km)"}}}}, "type": "bar"}};</script>
+<script src="../static/js/site.js"></script>
+</body>
+</html>

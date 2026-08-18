@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joey Dohle · Last Soul Ultra 2025</title>
+<meta name="description" content="Community-run statistics for the Last Soul Ultra backyard ultra.">
+<link rel="stylesheet" href="../../static/css/site.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Last Soul Ultra Statistics</a>
+  <nav class="site-nav">
+    <a href="../../2026-last-soul/index.html">2026</a>
+    <a href="../../2025-last-soul/index.html" class="active">2025</a>
+    <a href="../../compare/index.html">Compare</a>
+  </nav>
+</header>
+<main>
+<a class="back-link" href="../index.html">&larr; Back to 2025 results</a>
+
+<div class="profile-card">
+  <img class="photo" src="https://dgalywyr863hv.cloudfront.net/pictures/athletes/34396361/10192287/5/full.jpg" alt="Joey Dohle">
+  <div>
+    <h1>Joey Dohle <span class="subtitle">🇩🇪 DE</span></h1>
+    <div class="social-links">
+      <a class="instagram-link" href="https://instagram.com/joey.dohle" target="_blank" rel="noopener">
+        <svg class="icon-instagram" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2c-2.7 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47a4.9 4.9 0 0 0-1.77 1.15A4.9 4.9 0 0 0 2.53 5.45c-.25.64-.42 1.37-.47 2.43C2.01 8.94 2 9.28 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43.26.66.6 1.22 1.15 1.77.55.55 1.11.9 1.77 1.15.64.25 1.37.42 2.43.47C8.94 21.99 9.28 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47a4.9 4.9 0 0 0 1.77-1.15 4.9 4.9 0 0 0 1.15-1.77c.25-.64.42-1.37.47-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.15-1.77A4.9 4.9 0 0 0 18.55 2.53c-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.72 2 12 2zm0 3.05a5.15 5.15 0 1 1 0 10.3 5.15 5.15 0 0 1 0-10.3zm0 1.8a3.35 3.35 0 1 0 0 6.7 3.35 3.35 0 0 0 0-6.7zm6.55-2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
+        <span>joey.dohle</span>
+      </a>
+      <a class="strava-link" href="https://www.strava.com/athletes/34396361" target="_blank" rel="noopener">
+        <svg class="icon-strava" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066M13.828 0L7.187 13.832h3.065L13.828 0z"/></svg>
+        <span>Strava</span>
+      </a>
+    </div>
+    <dl class="info-table">
+      <dt>Status</dt><dd>DNF</dd>
+      <dt>Bib</dt><dd>46</dd>
+      <dt>Loops completed</dt><dd>11</dd>
+      <dt>Distance</dt><dd>73.7 km</dd>
+      <dt>Elapsed time</dt><dd>10:52:23</dd>
+      <dt>Time on course</dt><dd>10:52:23</dd>
+<dt>Avg pace</dt><dd>8:51 /km</dd>      <dt>Fastest loop</dt><dd>-</dd>
+      <dt>Slowest loop</dt><dd>-</dd>
+    </dl>
+  </div>
+</div>
+
+
+<h2>Performance</h2>
+<div class="charts-grid athlete-charts-grid">
+  <div class="chart-card wide">
+  <h3>Loop time</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-loop-time"></canvas></div>
+</div>
+
+  <div class="chart-card">
+  <h3>Pace per loop</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-pace"></canvas></div>
+</div>
+
+  <div class="chart-card">
+  <h3>Heart rate per loop</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-heart-rate"></canvas></div>
+</div>
+
+  <div class="chart-card">
+  <h3>Cadence per loop</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-cadence"></canvas></div>
+</div>
+
+  
+  
+</div>
+
+<h2>Loop-by-loop splits</h2>
+<table class="display data-table" data-dt-options='{"searching": false, "paging": false}'>
+  <thead>
+    <tr>
+      <th>Loop</th>
+      <th>Loop time</th>
+      <th>Cumulative distance</th>
+<th>Pace</th><th>Avg HR</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>46:15</td>
+      <td>6.7 km</td>
+<td>6:56 /km</td><td>125</td>    </tr>
+    <tr>
+      <td>2</td>
+      <td>47:45</td>
+      <td>13.3 km</td>
+<td>7:10 /km</td><td>120</td>    </tr>
+    <tr>
+      <td>3</td>
+      <td>47:42</td>
+      <td>20.0 km</td>
+<td>7:09 /km</td><td>125</td>    </tr>
+    <tr>
+      <td>4</td>
+      <td>47:38</td>
+      <td>26.6 km</td>
+<td>7:09 /km</td><td>128</td>    </tr>
+    <tr>
+      <td>5</td>
+      <td>47:14</td>
+      <td>33.3 km</td>
+<td>7:05 /km</td><td>131</td>    </tr>
+    <tr>
+      <td>6</td>
+      <td>47:09</td>
+      <td>40.0 km</td>
+<td>7:04 /km</td><td>131</td>    </tr>
+    <tr>
+      <td>7</td>
+      <td>46:01</td>
+      <td>46.6 km</td>
+<td>6:54 /km</td><td>135</td>    </tr>
+    <tr>
+      <td>8</td>
+      <td>45:07</td>
+      <td>53.3 km</td>
+<td>6:46 /km</td><td>138</td>    </tr>
+    <tr>
+      <td>9</td>
+      <td>44:50</td>
+      <td>59.9 km</td>
+<td>6:44 /km</td><td>120</td>    </tr>
+    <tr>
+      <td>10</td>
+      <td>47:39</td>
+      <td>66.6 km</td>
+<td>7:09 /km</td><td>128</td>    </tr>
+    <tr>
+      <td>11</td>
+      <td>51:15</td>
+      <td>73.3 km</td>
+<td>7:41 /km</td><td>121</td>    </tr>
+  </tbody>
+</table></main>
+<footer>Community-run statistics, not an official race result. Data scraped from public sources. Report errors to <a href="mailto:seelenstatistics@gmail.com">seelenstatistics@gmail.com</a>.</footer>
+<script>window.SITE_CHARTS = {"chart-cadence": {"data": {"datasets": [{"data": [74.0, 73.0, 73.0, 73.0, 73.0, 73.0, 74.0, 75.0, 74.0, 74.0, 73.0], "pointRadius": 2, "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"title": {"display": true, "text": "Cadence (steps/min)"}}}}, "type": "line"}, "chart-heart-rate": {"data": {"datasets": [{"data": [124.8, 119.9, 125.4, 127.9, 130.7, 130.6, 134.5, 138.4, 120.0, 128.2, 121.3], "label": "Avg HR", "pointRadius": 2, "seriesRoles": "series-1"}, {"data": [140.0, 138.0, 143.0, 142.0, 146.0, 146.0, 155.0, 154.0, 131.0, 138.0, 135.0], "label": "Max HR", "pointRadius": 2, "seriesRoles": "series-2"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": true, "position": "bottom"}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"title": {"display": true, "text": "Heart rate (bpm)"}}}}, "type": "line"}, "chart-loop-time": {"data": {"datasets": [{"data": [46.25, 47.75, 47.7, 47.63, 47.23, 47.15, 46.02, 45.12, 44.83, 47.65, 51.25], "pointRadius": 2, "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Loop time (min)"}}}}, "type": "line"}, "chart-pace": {"data": {"datasets": [{"data": [6.93, 7.17, 7.15, 7.15, 7.08, 7.07, 6.9, 6.77, 6.73, 7.15, 7.68], "pointRadius": 2, "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Pace (min/km)"}}}}, "type": "line"}};</script>
+<script src="../../static/js/site.js"></script>
+</body>
+</html>

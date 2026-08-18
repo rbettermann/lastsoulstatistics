@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benjamin Klotz · Last Soul Ultra 2026</title>
+<meta name="description" content="Community-run statistics for the Last Soul Ultra backyard ultra.">
+<link rel="stylesheet" href="../../static/css/site.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Last Soul Ultra Statistics</a>
+  <nav class="site-nav">
+    <a href="../../2026-last-soul/index.html" class="active">2026</a>
+    <a href="../../2025-last-soul/index.html">2025</a>
+    <a href="../../compare/index.html">Compare</a>
+  </nav>
+</header>
+<main>
+<a class="back-link" href="../index.html">&larr; Back to 2026 results</a>
+
+<div class="profile-card">
+  <div>
+    <h1>Benjamin Klotz <span class="subtitle">🇩🇪 DE</span></h1>
+    <dl class="info-table">
+      <dt>Status</dt><dd>DNF</dd>
+      <dt>Bib</dt><dd>91</dd>
+      <dt>Loops completed</dt><dd>7</dd>
+      <dt>Distance</dt><dd>46.9 km</dd>
+      <dt>Elapsed time</dt><dd>06:06:48</dd>
+      <dt>Time on course</dt><dd>06:06:47</dd>
+<dt>Rest banked</dt><dd>00:53:12</dd>      <dt>Fastest loop</dt><dd>49:57</dd>
+      <dt>Slowest loop</dt><dd>56:10</dd>
+    </dl>
+  </div>
+</div>
+
+
+<h2>Performance</h2>
+<div class="charts-grid athlete-charts-grid">
+  <div class="chart-card wide">
+  <h3>Loop time</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-loop-time"></canvas></div>
+</div>
+
+  
+  
+  
+  <div class="chart-card">
+  <h3>Rest per loop</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-rest"></canvas></div>
+</div>
+
+  
+</div>
+
+<h2>Loop-by-loop splits</h2>
+<table class="display data-table" data-dt-options='{"searching": false, "paging": false}'>
+  <thead>
+    <tr>
+      <th>Loop</th>
+      <th>Loop time</th>
+<th>Rest</th>      <th>Cumulative distance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>49:57</td>
+<td>10:02</td>      <td>6.7 km</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>53:10</td>
+<td>6:49</td>      <td>13.4 km</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>52:57</td>
+<td>7:02</td>      <td>20.1 km</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>51:47</td>
+<td>8:12</td>      <td>26.8 km</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>50:53</td>
+<td>9:06</td>      <td>33.5 km</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>51:50</td>
+<td>8:09</td>      <td>40.2 km</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>56:10</td>
+<td>3:49</td>      <td>46.9 km</td>
+    </tr>
+  </tbody>
+</table></main>
+<footer>Community-run statistics, not an official race result. Data scraped from public sources. Report errors to <a href="mailto:seelenstatistics@gmail.com">seelenstatistics@gmail.com</a>.</footer>
+<script>window.SITE_CHARTS = {"chart-loop-time": {"data": {"datasets": [{"data": [49.95, 53.17, 52.95, 51.78, 50.88, 51.83, 56.17], "pointRadius": 2, "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Loop time (min)"}}}}, "type": "line"}, "chart-rest": {"data": {"datasets": [{"data": [10.03, 6.82, 7.03, 8.2, 9.1, 8.15, 3.82], "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Rest banked (min)"}}}}, "type": "bar"}};</script>
+<script src="../../static/js/site.js"></script>
+</body>
+</html>

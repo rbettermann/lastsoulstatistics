@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moritz Loidl · year over year</title>
+<meta name="description" content="Community-run statistics for the Last Soul Ultra backyard ultra.">
+<link rel="stylesheet" href="../../static/css/site.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Last Soul Ultra Statistics</a>
+  <nav class="site-nav">
+    <a href="../../2026-last-soul/index.html">2026</a>
+    <a href="../../2025-last-soul/index.html">2025</a>
+    <a href="../../compare/index.html" class="active">Compare</a>
+  </nav>
+</header>
+<main>
+<a class="back-link" href="../index.html">&larr; Back to compare</a>
+<h1>Moritz Loidl</h1>
+<p class="subtitle">Year-over-year performance.</p>
+
+<table class="display data-table" data-dt-options='{"searching": false, "paging": false}'>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Status</th>
+      <th>Rank</th>
+      <th>Loops</th>
+      <th>Distance</th>
+      <th>Elapsed time</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025</td>
+      <td>DNF</td>
+      <td>11</td>
+      <td>27</td>
+      <td>180.9 km</td>
+      <td>1d 03:00:00</td>
+      <td><a href="../../2025-last-soul/athletes/83.html">profile &rarr;</a></td>
+    </tr>
+    <tr>
+      <td>2026</td>
+      <td>DNF</td>
+      <td>87</td>
+      <td>16</td>
+      <td>107.3 km</td>
+      <td>13:17:20</td>
+      <td><a href="../../2026-last-soul/athletes/10.html">profile &rarr;</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Loop time, overlaid</h2>
+<div class="charts-grid">
+  <div class="chart-card wide">
+  <h3>Loop time by year</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-loop-time"></canvas></div>
+</div>
+
+  
+</div>
+<p class="data-note">Heart-rate comparison isn't available - at least one of these years' data doesn't include heart rate.</p>
+</main>
+<footer>Community-run statistics, not an official race result. Data scraped from public sources. Report errors to <a href="mailto:seelenstatistics@gmail.com">seelenstatistics@gmail.com</a>.</footer>
+<script>window.SITE_CHARTS = {"chart-loop-time": {"data": {"datasets": [{"data": [47.57, 46.8, 44.63, 44.03, 45.08, 44.0, 44.47, 43.3, 43.72, 44.18, 44.73, 45.32, 43.43, 36.03, 45.62, 46.65, 46.83, 50.05, 43.4, 42.42, 44.83, 45.83, 44.93, 50.9, 53.9], "label": "2025", "pointRadius": 1, "seriesRoles": "series-1", "spanGaps": true}, {"data": [43.73, 44.02, 46.8, 48.52, 47.17, 49.35, 48.75, 52.55, 52.15, 50.02, 49.43, 48.68, 48.2, 52.77, 58.85, 56.18, null, null, null, null, null, null, null, null, null], "label": "2026", "pointRadius": 1, "seriesRoles": "series-2", "spanGaps": true}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": true, "position": "bottom"}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Loop time (min)"}}}}, "type": "line"}};</script>
+<script src="../../static/js/site.js"></script>
+</body>
+</html>
