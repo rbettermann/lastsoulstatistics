@@ -190,6 +190,26 @@ h2 {
   margin: 0 auto;
 }
 
+.chart-card-link {
+  display: block;
+}
+
+.chart-card.is-link {
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.chart-card-link:hover .chart-card.is-link {
+  border-color: var(--series-1);
+  box-shadow: 0 0 0 1px var(--series-1);
+}
+
+.chart-card-hint {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--series-1);
+  text-align: right;
+}
+
 /* Athlete detail page: how many non-wide chart cards appear varies a lot
  * (event capabilities, plus whether the completeness card is shown at all)
  * - unlike the shared auto-fit grid above, cap card width so a lone
