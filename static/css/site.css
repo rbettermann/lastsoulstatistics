@@ -412,3 +412,94 @@ footer {
   font-size: 0.82rem;
   padding: 2rem 1rem;
 }
+
+/* Two-athlete comparison page (compare-athletes.html): pickers + a
+ * metric-rows/athlete-columns head-to-head table, instead of the
+ * athlete-rows tables used elsewhere - see compare-athletes.js. */
+.picker-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.picker {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.picker label {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.picker select {
+  background: var(--surface-2);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.95rem;
+}
+
+.swap-btn {
+  background: var(--surface-1);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  flex: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 0.1rem;
+}
+
+.swap-btn:hover {
+  border-color: var(--series-1);
+  color: var(--series-1);
+}
+
+.h2h-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.h2h-table th,
+.h2h-table td {
+  padding: 0.6rem 1rem;
+  border-top: 1px solid var(--gridline);
+  text-align: left;
+}
+
+.h2h-table thead th {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border-top: none;
+}
+
+.h2h-table tbody th {
+  color: var(--text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.h2h-meta {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.h2h-better {
+  color: var(--status-good);
+  font-weight: 700;
+}
