@@ -44,7 +44,7 @@
       <dt>Distance</dt><dd>134.1 km</dd>
       <dt>Elapsed time</dt><dd>17:17:02</dd>
       <dt>Time on course</dt><dd>17:17:01</dd>
-<dt>Rest banked</dt><dd>02:42:58</dd>      <dt>Fastest loop</dt><dd>48:29</dd>
+<dt>Rest banked</dt><dd>02:42:58</dd><dt>Avg pace</dt><dd>7:44 /km</dd>      <dt>Fastest loop</dt><dd>48:29</dd>
       <dt>Slowest loop</dt><dd>54:40</dd>
     </dl>
   </div>
@@ -59,9 +59,21 @@
   <div class="chart-canvas-wrap"><canvas id="chart-loop-time"></canvas></div>
 </div>
 
-  
-  
-  
+  <div class="chart-card">
+  <h3>Pace per loop</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-pace"></canvas></div>
+</div>
+
+  <div class="chart-card">
+  <h3>Heart rate per loop</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-heart-rate"></canvas></div>
+</div>
+
+  <div class="chart-card">
+  <h3>Cadence per loop</h3>
+  <div class="chart-canvas-wrap"><canvas id="chart-cadence"></canvas></div>
+</div>
+
   <div class="chart-card">
   <h3>Rest per loop</h3>
   <div class="chart-canvas-wrap"><canvas id="chart-rest"></canvas></div>
@@ -77,113 +89,113 @@
       <th>Loop</th>
       <th>Loop time</th>
 <th>Rest</th>      <th>Cumulative distance</th>
-    </tr>
+<th>Pace</th><th>Avg HR</th>    </tr>
   </thead>
   <tbody>
     <tr>
       <td>1</td>
       <td>48:29</td>
 <td>11:30</td>      <td>6.7 km</td>
-    </tr>
+<td>7:29 /km</td><td>112</td>    </tr>
     <tr>
       <td>2</td>
       <td>50:55</td>
 <td>9:04</td>      <td>13.4 km</td>
-    </tr>
+<td>9:16 /km</td><td>114</td>    </tr>
     <tr>
       <td>3</td>
       <td>51:17</td>
 <td>8:42</td>      <td>20.1 km</td>
-    </tr>
+<td>9:11 /km</td><td>117</td>    </tr>
     <tr>
       <td>4</td>
       <td>51:32</td>
 <td>8:27</td>      <td>26.8 km</td>
-    </tr>
+<td>9:04 /km</td><td>122</td>    </tr>
     <tr>
       <td>5</td>
       <td>50:11</td>
 <td>9:48</td>      <td>33.5 km</td>
-    </tr>
+<td>7:52 /km</td><td>124</td>    </tr>
     <tr>
       <td>6</td>
       <td>50:00</td>
 <td>9:59</td>      <td>40.2 km</td>
-    </tr>
+<td>8:48 /km</td><td>123</td>    </tr>
     <tr>
       <td>7</td>
       <td>51:41</td>
 <td>8:18</td>      <td>46.9 km</td>
-    </tr>
+<td>9:19 /km</td><td>123</td>    </tr>
     <tr>
       <td>8</td>
       <td>51:25</td>
 <td>8:34</td>      <td>53.6 km</td>
-    </tr>
+<td>8:59 /km</td><td>120</td>    </tr>
     <tr>
       <td>9</td>
       <td>51:26</td>
 <td>8:33</td>      <td>60.4 km</td>
-    </tr>
+<td>9:07 /km</td><td>119</td>    </tr>
     <tr>
       <td>10</td>
       <td>51:33</td>
 <td>8:26</td>      <td>67.1 km</td>
-    </tr>
+<td>8:16 /km</td><td>121</td>    </tr>
     <tr>
       <td>11</td>
       <td>52:33</td>
 <td>7:26</td>      <td>73.8 km</td>
-    </tr>
+<td>9:03 /km</td><td>141</td>    </tr>
     <tr>
       <td>12</td>
       <td>51:03</td>
 <td>8:56</td>      <td>80.5 km</td>
-    </tr>
+<td>8:38 /km</td><td>131</td>    </tr>
     <tr>
       <td>13</td>
       <td>51:41</td>
 <td>8:18</td>      <td>87.2 km</td>
-    </tr>
+<td>9:10 /km</td><td>122</td>    </tr>
     <tr>
       <td>14</td>
       <td>53:40</td>
 <td>6:19</td>      <td>93.9 km</td>
-    </tr>
+<td>9:16 /km</td><td>119</td>    </tr>
     <tr>
       <td>15</td>
       <td>54:13</td>
 <td>5:46</td>      <td>100.6 km</td>
-    </tr>
+<td>8:37 /km</td><td>121</td>    </tr>
     <tr>
       <td>16</td>
       <td>54:05</td>
 <td>5:54</td>      <td>107.3 km</td>
-    </tr>
+<td>8:57 /km</td><td>133</td>    </tr>
     <tr>
       <td>17</td>
       <td>51:00</td>
 <td>8:59</td>      <td>114.0 km</td>
-    </tr>
+<td>8:30 /km</td><td>137</td>    </tr>
     <tr>
       <td>18</td>
       <td>53:16</td>
 <td>6:43</td>      <td>120.7 km</td>
-    </tr>
+<td>9:10 /km</td><td>141</td>    </tr>
     <tr>
       <td>19</td>
       <td>52:12</td>
 <td>7:47</td>      <td>127.4 km</td>
-    </tr>
+<td>8:51 /km</td><td>137</td>    </tr>
     <tr>
       <td>20</td>
       <td>54:40</td>
 <td>5:19</td>      <td>134.1 km</td>
-    </tr>
+<td>9:01 /km</td><td>129</td>    </tr>
   </tbody>
 </table></main>
 <footer>Community-run statistics, not an official race result. Data scraped from public sources. Report errors to <a href="mailto:seelenstatistics@gmail.com">seelenstatistics@gmail.com</a>.</footer>
-<script>window.SITE_CHARTS = {"chart-loop-time": {"data": {"datasets": [{"data": [48.48, 50.92, 51.28, 51.53, 50.18, 50.0, 51.68, 51.42, 51.43, 51.55, 52.55, 51.05, 51.68, 53.67, 54.22, 54.08, 51.0, 53.27, 52.2, 54.67], "pointRadius": 2, "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Loop time (min)"}}}}, "type": "line"}, "chart-rest": {"data": {"datasets": [{"data": [11.5, 9.07, 8.7, 8.45, 9.8, 9.98, 8.3, 8.57, 8.55, 8.43, 7.43, 8.93, 8.3, 6.32, 5.77, 5.9, 8.98, 6.72, 7.78, 5.32], "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Rest banked (min)"}}}}, "type": "bar"}};</script>
+<script>window.SITE_CHARTS = {"chart-cadence": {"data": {"datasets": [{"data": [82.2, 80.9, 78.4, 80.6, 81.4, 80.9, 80.2, 82.1, 82.7, 83.5, 81.9, 83.1, 83.2, 83.1, 83.2, 82.2, 82.1, 81.9, 82.4, 81.0], "pointRadius": 2, "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"title": {"display": true, "text": "Cadence (steps/min)"}}}}, "type": "line"}, "chart-heart-rate": {"data": {"datasets": [{"data": [112.0, 114.3, 116.7, 122.2, 124.2, 123.3, 122.6, 120.4, 119.3, 121.1, 141.1, 130.8, 122.0, 118.9, 120.6, 132.9, 136.9, 140.6, 136.7, 128.9], "label": "Avg HR", "pointRadius": 2, "seriesRoles": "series-1"}, {"data": [124.0, 126.0, 138.0, 138.0, 138.0, 134.0, 144.0, 151.0, 151.0, 144.0, 173.0, 164.0, 151.0, 150.0, 138.0, 155.0, 156.0, 162.0, 163.0, 149.0], "label": "Max HR", "pointRadius": 2, "seriesRoles": "series-2"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": true, "position": "bottom"}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"title": {"display": true, "text": "Heart rate (bpm)"}}}}, "type": "line"}, "chart-loop-time": {"data": {"datasets": [{"data": [48.48, 50.92, 51.28, 51.53, 50.18, 50.0, 51.68, 51.42, 51.43, 51.55, 52.55, 51.05, 51.68, 53.67, 54.22, 54.08, 51.0, 53.27, 52.2, 54.67], "pointRadius": 2, "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Loop time (min)"}}}}, "type": "line"}, "chart-pace": {"data": {"datasets": [{"data": [7.49, 9.27, 9.19, 9.07, 7.87, 8.79, 9.32, 8.99, 9.12, 8.26, 9.05, 8.63, 9.16, 9.27, 8.62, 8.95, 8.5, 9.17, 8.85, 9.02], "pointRadius": 2, "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Pace (min/km)"}}}}, "type": "line"}, "chart-rest": {"data": {"datasets": [{"data": [11.5, 9.07, 8.7, 8.45, 9.8, 9.98, 8.3, 8.57, 8.55, 8.43, 7.43, 8.93, 8.3, 6.32, 5.77, 5.9, 8.98, 6.72, 7.78, 5.32], "seriesRoles": "series-1"}], "labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}, "options": {"maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "responsive": true, "scales": {"x": {"title": {"display": true, "text": "Loop number"}}, "y": {"beginAtZero": true, "title": {"display": true, "text": "Rest banked (min)"}}}}, "type": "bar"}};</script>
 <script src="../../static/js/site.js"></script>
 </body>
 </html>

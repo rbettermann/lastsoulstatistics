@@ -503,3 +503,15 @@ footer {
   color: var(--status-good);
   font-weight: 700;
 }
+
+/* Full vs. partial supplementary per-loop data (HR/cadence/pace/power)
+   indicator - reused by the overview/top-10 tables (leaderboard_table.html.j2
+   / top10.html.j2, via the partials/lap_data_badge.html.j2 macro) and the
+   compare-athletes picker/head-to-head table (compare-athletes.js). */
+.lap-data-badge {
+  color: var(--status-good);
+}
+
+.lap-data-badge.partial {
+  color: var(--status-warning);
+}

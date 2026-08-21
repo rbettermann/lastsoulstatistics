@@ -27,7 +27,11 @@
 
   function optionLabel(athlete) {
     const prefix = athlete.rank != null ? `${athlete.rank}. ` : "";
-    return `${prefix}${athlete.name} — ${athlete.distance}`;
+    // native <option> elements can't hold markup, so the full/partial
+    // lap-data indicator (see nameCell() below for the richer version used
+    // in the head-to-head table) is just a plain-text suffix here.
+    const badge = athlete.has_full_lap_metrics ? " ✓" : athlete.lap_metrics_coverage ? " (partial data)" : "";
+    return `${prefix}${athlete.name} — ${athlete.distance}${badge}`;
   }
 
   function populatePicker(select) {
@@ -87,6 +91,16 @@
     link.textContent = athlete.name;
     const wrap = document.createElement("div");
     wrap.appendChild(link);
+    // same visual language as the overview table's lap-data badge (●/◐)
+    if (athlete.has_full_lap_metrics || athlete.lap_metrics_coverage) {
+      const badge = document.createElement("span");
+      badge.className = athlete.has_full_lap_metrics ? "lap-data-badge" : "lap-data-badge partial";
+      badge.textContent = athlete.has_full_lap_metrics ? " ●" : " ◐";
+      badge.title = athlete.has_full_lap_metrics
+        ? "Full heart-rate/cadence/pace data available"
+        : `Partial heart-rate/cadence/pace data (${Math.round(athlete.lap_metrics_coverage * 100)}%)`;
+      wrap.appendChild(badge);
+    }
     const meta = document.createElement("div");
     meta.className = "h2h-meta";
     meta.textContent = athlete.country;
